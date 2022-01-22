@@ -1,0 +1,82 @@
+<%- include("header") %> 
+
+
+
+<!-------------------------------------------- Current User Profile ------------------------------------------->
+
+
+
+<div id="my_profile"></div>
+<h1 class="profile_head" >My Profile</h1>
+<div class="profile" >
+    
+    <img src="img/male.png" alt="">
+        <h1>sPark Banking</h1>
+    <table class="data">
+        <tr>
+            <td>Acc No :</td>
+            <td><%= var_my.accNo %> </td>
+        </tr>
+        <tr>
+            <td>Balance :</td>
+            <td><%= var_my.balance %> </td>
+        </tr>
+        <tr>
+            <td>Name :</td>
+            <td><%= var_my.name %> </td>
+        </tr>
+        <tr>
+            <td>Mobile No :</td>
+            <td><%= var_my.mobNo %></td>
+        </tr>
+        <tr>
+            <td>E-mail :</td>
+            <td><%= var_my.email %> </td>
+        </tr>
+        <tr>
+            <td>Gender :</td>
+            <td><%= var_my.gender %>   <span>Age : <%= var_my.age %> </span></td>
+        </tr>
+    </table>
+    
+</div>
+
+
+
+
+<!-------------------------------------------- Services ------------------------------------------->
+
+
+
+
+<div class="" id="services"> 
+    <h1 class="head1 text-center" >Services</h1>
+    <div class="row">
+        <div class="card " style="width: 18rem;">
+            <img class="icon" src="img/user.png" > 
+            <div class="card-body">
+              <p class="card-text">Se all the customers.</p>
+            </div>
+            <button><a href="/all_cust">Customers</a></button>
+        </div>
+        <div class="card " style="width: 18rem;">
+            <img class="icon" src="img/money.png" >
+            <div class="card-body">
+              <p class="card-text">Transfer money with just one click.</p>
+            </div>
+            <button><a href="/transfer">Transfer</a></button>
+        </div>
+        <div class="card " style="width: 18rem;">
+            <img class="icon" src="img/activity.png" >
+            <div class="card-body">
+              <p class="card-text">See your all Transactions.</p>
+            </div>
+            <button><a href="/my_activity">Transactions</a></button>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<%- include("footer") %> 

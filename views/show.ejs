@@ -1,0 +1,43 @@
+<%- include("header") %> 
+
+
+<!-------------------------------------------------- Selected Users Full profile ------------------------------------------------->
+
+
+
+    <div id="user_profile"></div>
+    <div class="user_profile" >
+        
+        <img src="img/male.png" alt="">
+        <h1>sPark Banking</h1>
+        <table class="data">
+            <tr>
+                <td>Acc No :</td>
+                <td><%= var_my.accNo %> </td>
+            </tr>
+            <tr>
+                <td>Balance :</td>
+                <td><%= var_my.balance %> </td>
+            </tr>
+            <tr>
+                <td>Name :</td>
+                <td><%= var_my.name %> </td>
+            </tr>
+            <tr>
+                <td>Mobile No :</td>
+                <td><%= var_my.mobNo %></td>
+            </tr>
+            <tr>
+                <td>E-mail :</td>
+                <td><%= var_my.email %> </td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td><%= var_my.gender %>   <span>Age : <%= var_my.age %> </span></td>
+            </tr>
+        </table>
+        <button><a href="/transfer-to">Transfer</a></button>
+    </div>
+
+
+<%- include("footer") %> 

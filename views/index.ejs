@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><%= heading %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="top">
+
+
+<!-------------------------------------------------- Navigation Bar ------------------------------------------------->
+
+            
+            <nav class="navigation navbar navbar-expand-lg navbar-light bg">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                    <a class="navbar-brand" href="/">sPark Banking</a>
+                
+                </div>   
+            </nav>
+
+
+<!-------------------------------------------- Bank Info ------------------------------------------->
+
+
+
+        <div class="outside ">   
+
+            <div class="inside">
+                <h1 class="company">sPark Banking </h1>
+                <h1 style="color: rgb(107, 107, 107);">A Tradition Of Trust </h1>
+                <div class="temp">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                        Select Customer
+                    </button>
+        
+                    <div class="collapse" id="collapseExample">
+                        <% var_data.forEach((cust)=>{ %>
+                            <form class="<%= cust.name %>" action="/home" method="POST">
+                                <a class="dropdown-item" href="#" onclick="this.parentNode.submit()"><%= cust.name %></a>
+                                <input type="hidden"  name="curCustomer" value="<%= cust.accNo %>">
+                            </form>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+
+            <img class="handshake" src="img/handshake.jpg" alt="">
+        </div> 
+
+
+
+<!-------------------------------------------- Developer Name ------------------------------------------->
+
+
+
+        <h1 class="text-center my " >Rajpurohit Yogesh Singh</h1>
+
+
+
+<%- include("footer") %> 

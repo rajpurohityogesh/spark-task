@@ -1,0 +1,561 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/************************************************ Navigation bar *************************************************/
+
+
+.navigation{  
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: rgb(28, 145, 255); 
+    padding-left: 1rem;
+    z-index: 1;
+} 
+
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 500;
+    color: rgb(250 253 255);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.navbar-light .navbar-brand:hover{
+    color: white;
+} 
+
+.nav-list{
+    position: fixed;
+    right: 1rem;
+}
+
+
+
+
+/************************************************ index.ejs *************************************************/
+
+
+.outside {
+    margin-top: 150px;
+    margin-left: auto;   
+    margin-right: auto;
+    width: 50em;
+}
+
+
+
+.inside {
+    display: inline-block;
+}
+
+.inside h1 {
+    
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.inside h1:first-child{
+    color: rgb(28, 145, 255);
+}
+
+.inside h1:last-child{
+    color: darkgray;
+}
+
+.handshake{
+    width: 40%;
+    margin-bottom: 60px;
+    margin-left: 130px;
+
+}
+
+
+
+
+
+/* Dropdown */
+
+.temp {
+    width: fit-content;
+    border-radius: 10px;    
+}
+
+.temp button {
+    background-color:  rgb(28, 153, 255);
+    border-radius: 15px;
+    border: 0px;
+    margin-bottom: 1rem;
+}
+
+.temp div {
+    border: 4px solid rgb(28, 153, 255);
+    border-radius: 10px
+}
+ 
+.temp a:hover {
+    color: white;
+    background-color: rgb(28, 153, 255);
+    font-size : large;
+}
+
+
+/* My Name */
+
+
+
+
+
+.my {
+    height: 4rem;
+    width: 40rem;
+    background-color: rgb(28, 145, 255);
+    color: white;
+    font-size: 3rem;
+    margin: 2rem auto 8rem;
+
+    border-radius: 5rem;
+}
+
+
+
+
+
+/* My Profile */
+
+
+#my_profile {
+    height: 5rem;
+}
+
+
+.profile_head {
+    width: fit-content; 
+    margin: 0rem auto 2rem; 
+    color: rgb(107, 107, 107);
+}
+
+.profile {
+    background-color:  rgb(28, 153, 255);
+    color: white;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 2% 5% 1%;
+    border-radius: 2rem;
+    font-size: xx-large ;
+}
+
+.profile h1 {
+    display: inline;
+}
+
+
+.profile img {
+    margin-bottom: 1rem;
+    margin-right: 8rem;
+}
+
+.profile td {
+    padding: 0.5rem 1rem;
+}
+
+.profile tr td:first-child {
+    text-align: right;
+}
+
+.profile span {
+    float: right;
+    margin-right: 8rem;
+}
+
+
+
+/* Servicees portion */
+
+
+
+
+
+
+#services {
+    margin: 10rem 50px;
+    padding: 3% 5%;
+    background-color: rgb(28, 145, 255) ;
+    border-radius: 2rem;
+}
+
+#services .row {
+    margin: 50px 0px 0px 183px;
+}
+
+.head1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card{
+    margin: 0px 10px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.icon {
+    margin: 10px auto;
+    width: 8rem;
+    height: 8rem;
+}
+
+.card .card-title {
+    background-color: white;
+    border: 0px;
+    border-radius: 2rem;
+}
+
+.card-text{
+    color: rgb(119, 119, 119);
+    font-size: 2rem;
+}
+
+
+.card button {
+    background-color:  rgb(28, 145, 255);
+    border-radius: 20px;
+    border: 0px;
+    margin: 0px auto 15px;
+    font-size: larger;
+    padding: 5px 15px;
+    width: fit-content;
+}
+
+.card button:hover{
+    background-color: rgb(25, 125, 240) ;
+}
+
+.card a {
+    color: white;
+    background-color: transparent;
+}
+
+.card a:hover {
+    text-decoration: none;
+}
+
+/************************************************ all_cust.ejs *************************************************/
+
+
+.all_cust {
+    background-color: rgb(28, 145, 255);
+    margin: 8rem auto;
+    border-radius: 2rem;
+    padding: 1rem 2rem 2rem;
+    width: fit-content;
+}
+
+.all_cust .head {
+    text-align: center;
+    color: white;
+    margin: 1rem 0rem 4rem;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}  
+
+.flex-child:first-child {
+    margin-right: 2rem;
+}
+
+.per_cust {
+    width: 32rem;
+    background-color: white;
+    border-radius: 2rem;
+    color: darkgray;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.per_cust img {
+    margin: 1rem 0rem;
+}
+
+.per_cust h1 {
+    font-size: x-large;
+}
+
+.per_cust h1:first-child {
+    padding-top: 1rem;
+}
+
+.per_cust h1:last-child {
+    padding-bottom: 1rem;
+}
+
+
+.per_cust button {
+    color: white;
+    background-color:  rgb(28, 145, 255);
+    border-radius: 20px;
+    border: 0px;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-size: larger;
+    padding: 5px 15px;
+}
+
+.per_cust button:hover{
+    background-color: rgb(25, 125, 240) ;
+}
+
+
+
+
+/************************************************ transfer.ejs *************************************************/
+
+
+.all_act {
+    background-color: rgb(28, 145, 255);
+    margin: 8rem auto;
+    border-radius: 2rem;
+    padding: 1rem 2rem 2rem;
+    width: fit-content;
+}
+
+.all_act .head {
+    text-align: center;
+    color: white;
+    margin: 1rem 0rem 4rem;
+}
+
+.per_act {
+    width: fit-content;
+    background-color: white;
+    border-radius: 2rem;
+    color: darkgray;
+    padding: 1rem 2rem;
+    font-size: large;
+    margin: 1rem 0rem;
+}
+
+.per_act th {
+    padding-left: 15px;
+    padding-bottom: 0.5rem;
+}
+
+.per_act td {
+    padding: 0px 15px;
+}
+
+
+
+
+
+
+
+/************************************************ my_activity.ejs *************************************************/
+
+
+
+
+.transfer {
+    background-color: rgb(28, 145, 255);
+    margin: 8rem auto;
+    border-radius: 2rem;
+    padding: 1rem 2rem 2rem;
+    width: fit-content;
+}
+
+.transfer .head {
+    text-align: center;
+    color: white;
+    margin: 1rem 0rem 2rem;
+}
+
+.transfer form {
+    width: fit-content;
+    background-color: white;
+    border-radius: 2rem;
+    color: rgb(78, 78, 78);
+    padding: 1rem 2rem;
+    font-size: large;
+}
+
+.transfer input {
+    border: 2px solid rgb(153, 153, 153);
+    border-radius: 5px;
+}
+
+.transfer input:hover {
+    border-color: rgb(83, 83, 83);
+}
+
+.transfer input::placeholder{
+    color: darkgray;
+}
+
+.transfer td {
+    text-align: right;
+    padding: 0.7rem 15px;
+}
+
+.transfer button {
+    color: white;
+    background-color:  rgb(28, 145, 255);
+    border-radius: 20px;
+    border: 0px;
+    margin: 1rem 1rem 1rem;
+    font-size: larger;
+    padding: 5px 10px;
+    
+}
+
+.transfer button:hover{
+    background-color: rgb(25, 125, 240);
+}
+
+
+
+
+
+/************************************************ show.ejs *************************************************/
+
+
+
+
+
+
+#user_profile {
+    height: 5rem;
+}
+
+/* 
+.user_profile_head {
+    width: fit-content; 
+    margin: 0rem auto 2rem; 
+    color: rgb(107, 107, 107);
+} */
+
+.user_profile {
+    background-color:  rgb(28, 153, 255);
+    color: white;
+    width: fit-content;
+    margin: 0px auto;
+    padding: 2% 5% 1%;
+    border-radius: 2rem;
+    font-size: xx-large ;
+}
+
+.user_profile h1 {
+    display: inline;
+}
+
+
+.user_profile img {
+    margin-bottom: 1rem;
+    margin-right: 8rem;
+}
+
+.user_profile td {
+    padding: 0.5rem 1rem;
+}
+
+.user_profile tr td:first-child {
+    text-align: right;
+}
+
+.user_profile span {
+    float: right;
+    margin-right: 10%;
+}
+
+.user_profile button{
+    border: 0px;
+    background-color: white;
+    font-size: x-large;
+    margin: 1rem 0rem 1.5rem 1rem;
+    border-radius: 20px;
+}
+
+.user_profile button:hover {
+    background-color: whitesmoke;
+}
+
+/* rgb(233, 230, 230); */
+
+.user_profile a {
+    color: rgb(28, 153, 255);
+    background-color: transparent;
+}
+
+.user_profile a:hover {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/************************************************ For Contact Which is att bottom *************************************************/
+
+
+
+
+
+.contact {
+    background-color: rgb(28, 145, 255);
+    margin: 8rem auto 0rem;
+    padding: 1rem 25rem 0.5rem ;
+}
+
+
+.contact h6 {
+    background-color: white;
+    width: fit-content;
+    margin: 1rem 12px;
+    border-radius: 1rem;
+    padding: 10px 1rem 10px 0.7rem;
+    color: rgb(119, 119, 119) ;
+    display: inline-block;
+}
+
+.contact img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.contact a {
+    color: rgb(119, 119, 119);
+}
+
+.contact a:hover {
+    text-decoration: none;
+    color: rgb(28, 145, 255);
+}
+
+.contact h5 {
+    width:  fit-content;
+    margin: 1rem auto 0.5rem;
+    color: white;
+    font-size: small;
+}

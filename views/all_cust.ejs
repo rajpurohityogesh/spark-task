@@ -1,0 +1,44 @@
+<%- include("header") %>
+
+    <div class="all_cust">
+        <h1 class="head">All Customers</h1>
+        
+
+
+<!-------------------------------------------------- All customers Little Info ------------------------------------------------->
+
+
+
+
+        <% for(var i=0 ; i<var_cust.length ; i++){ %>
+            <div class="flex-container">
+                <div class="flex-child per_cust">
+                    <form action="/all_cust" method="post">
+                        <img src="img/<%= var_cust[i].gender %>.png" alt="">
+                        <h1>Acc No : <%= var_cust[i].accNo %> </h1>
+                        <h1>Name   : <%= var_cust[i].name %></h1>
+                        <h1>E-mail : <%= var_cust[i].email %></h1>
+                        <button name="accNo" type="submit" value="<%= var_cust[i].accNo %>">View</button>
+                    </form>
+                </div>
+
+            <% i++; %> 
+            <% if(i>=var_cust.length){ %>
+                <% break; %>
+            <% } %>
+
+                <div class="flex-child per_cust">
+                    <form action="/all_cust" method="post">
+                        <img src="img/<%= var_cust[i].gender %>.png" alt="">
+                        <h1 id="accNo">Acc No : <%= var_cust[i].accNo %> </h1>
+                        <h1>Name   : <%= var_cust[i].name %></h1>
+                        <h1>E-mail : <%= var_cust[i].email %></h1>
+                        <button name="accNo" type="submit" value="<%= var_cust[i].accNo %>">View</a></button>
+                    </form>
+                </div>
+            </div>
+        <% } %>
+        
+    </div>
+
+<%- include("footer") %> 

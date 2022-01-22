@@ -1,0 +1,30 @@
+<%- include("header") %> 
+
+
+
+<!-------------------------------------------------- Transfer Money ------------------------------------------------->
+
+
+
+    <div class="transfer">
+        <h1 class="head">Transfer Money</h1>
+        <form action="/transfer" method="POST">
+            <table>
+                <tr>
+                    <td><label for="transfer_to">Receiver :</label></td>
+                    <td><input name="res_acc" id="transfer_to" type="text" placeholder="Enter Account No" <%= accDf %>><br> </td>
+                </tr>
+                <tr>
+                    <td><label for="amount">Amount :</label></td>
+                    <td><input name="res_amount" id="amount" type="text" placeholder="Enter Amount" autocomplete="off"><br></td>
+                </tr>
+            </table>
+            
+            <button type="submit">Transfer</button>
+            
+        </form>
+
+    </div>
+
+
+<%- include("footer") %> 

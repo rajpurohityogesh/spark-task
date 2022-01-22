@@ -1,0 +1,41 @@
+<%- include("header") %> 
+
+
+
+<!-------------------------------------------------- Current Users All Transactions ------------------------------------------------->
+
+
+
+    <div class="all_act">
+        <h1 class="head">All Transfers</h1>
+        <% for(var i=0 ; i<var_act.length ; i++){ %>
+            <div class="per_act">
+                <table>
+                    <tr>
+                        <th>Time(hh/mm/ss)</th>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Money</th>
+                    </tr>
+                    <tr>
+                        <td><%= var_act[i].time %></td>
+                        <td><%= var_act[i].date %></td>
+                        <td><%= var_act[i].fromName %></td>
+                        <td><%= var_act[i].toName %></td>
+                        <td><%= var_act[i].amount %></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><%= var_act[i].fromAcc %></td>
+                        <td><%= var_act[i].toAcc %></td>
+                    </tr>
+
+                </table>
+            </div>
+        <% } %> 
+    </div>
+
+
+<%- include("footer") %> 
